@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "diagnosticLogging": true,
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Nodemon with Babel",
+            "runtimeExecutable": "${workspaceRoot}/node_modules/nodemon/bin/nodemon.js",
+            "args": [
+                "${workspaceRoot}/src/index.js"
+            ],
+            "restart": true,
+            "protocol": "inspector",
+            "stopOnEntry": false,
+            "runtimeArgs": [
+                "--nolazy",
+                "--require",
+                "@babel/register"
+            ],
+            "sourceMaps": true
+        },
+    ]
+}
