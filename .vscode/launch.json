@@ -32,6 +32,6 @@
                 "@babel/register"
             ],
             "sourceMaps": true
-        },
+        }
     ]
 }
